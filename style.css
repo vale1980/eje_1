@@ -1,0 +1,150 @@
+
+body{
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;/*para quitar el formato a los textos de ancla*/
+    cursor: pointer;
+}
+header{
+    width: 100%;
+    height: 60px;
+}
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+nav .nav-right-section a{
+    margin-right: 10px;
+    color: black;
+}
+nav .nav-right-section .menu-icon{
+    background-image:url("https://static.thenounproject.com/png/756729-200.png");
+    background-repeat: no-repeat;/*cuando la imagen es muy grande o muy pequeña la imagen se repite para llenar el contenedor*/
+    background-position: center;/*para q el icono quede al centro*/
+    background-size:contain;/*para que se aproxime al tamaño de mi contenedor */
+    width: 25px;
+    height: 25px;
+}
+nav .nav-right-section img{
+    border-radius: 50%;
+  /*  margin-left: ;*/
+}
+nav .nav-right-section img{
+    border-radius: 50%;
+    margin-left: 10px;
+}
+main{
+    margin-top: 150px;
+    text-align: center;
+}
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    /*si queremos que de forma automatica se centre usamos auto
+    para que divide el espacio entre 2 y lo agrega a cada lado equitativamente */
+
+}
+main .main-imput{
+
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-imput-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid lightgray;
+   display: flex; /*ayuda a posicionar su
+    contenido como queremos ponerlo de forma lineal esto no ayudara*/
+    justify-content: center;
+    align-items: center;
+
+}
+main .main-imput input{
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+main .main-imput-container:hover{
+    box-shadow: 0 1px 6px 0 #000000;
+}
+main .main-imput .search-icon{
+    background-image: url("https://img.icons8.com/android/24/000000/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+main .main-imput .micro-icon{
+    background-image: url("https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+main .main-buttons div{
+    display: inline-block;
+}
+main .main-buttons button{
+    height: 36px;
+    background-color: lightgray;
+    border: none;
+    font-size: 14px;
+    color: black;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+main .main-buttons button:hover{
+    border: 1px solid #ffffff;
+    box-shadow: 0 1px 1px black;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;/*asegura que el
+    footer se quede 100% abajo de la pagina*/
+    bottom:0;
+    display: grid;/*tiene la propiedad GTC */
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: lightgray;
+}
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+footer .footer-left{
+    justify-self: left;/*el elemento se justifica a la izquierda*/
+}
+footer .footer-right{
+    justify-self: right;
+}
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+}
+
